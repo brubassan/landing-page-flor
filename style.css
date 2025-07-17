@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    padding: 2.1475rem;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header .logo > a {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #373233;
+}
+
+header .logo > a span {
+    color: #e25a87;
+}
+
+header .sessoes {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    width: 37.5rem;
+}
+
+header .sessoes > a {
+    color: #8b8a87;
+    transition: 0.2s;
+}
+
+header .sessoes > a:hover {
+    color:#e25a87;
+    transform: scale(1.04);
+}
+
+header .icons-header {
+    font-size: 1.375rem;
+    display: flex;
+    width: 7.5rem;
+    justify-content: space-between;
+}
+
+header .icons-header i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+header .icons-header i:hover {
+    color:#e25a87;
+    transform: scale(1.05);
+}
+
+/* TOPO */
+
+.topo {
+    background-color: #f0dcdf;
+}
+
+.topo > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3.4375rem;
+}
+
+.topo .txt-topo {
+    font-family: "Noto Sans", sans-serif;
+    width: 34.375rem;
+}
+
+.topo .txt-topo h1 {
+    font-weight: 700;
+    font-size: 4.375rem;
+    color: #373233;
+    line-height: 4.375rem;
+}
+
+.topo .txt-topo h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:#e25a87;
+} 
+
+.topo .txt-topo p {
+    font-size: 1.125rem;
+    color: #8b8a87;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.9375rem;
+}
+
+button {
+    background-color: #373233;
+    border: 0;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    color: #ffff;
+    padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e25a87;
+    transform: scale(1.05);
+}
+
+.topo .img-topo img {
+    mix-blend-mode: multiply;
+    width: 37.5rem;
+}
+
+/* SOBRE */
+
+.sobre > .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #ffedef;
+    width: 85%;
+    font-size: 2.5rem;
+    color:#e25a87;
+    border-radius: 1rem;
+    margin-top: 3.125rem;
+    margin-bottom: 2.5rem;
+}
+
+h3 span {
+    color: #373233;
+}
+
+.sobre .elementos-sobre {
+    display: flex;
+    padding: 0 3.4375rem;
+    padding-bottom: 4.375rem;
+    width: 85%;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre img {
+    width: 31.25rem;
+    border-radius: 1.25rem;
+}
+
+.sobre .txt-sobre {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    font-family: "Noto Sans", sans-serif;
+    flex-direction: column;
+}
+
+.sobre .txt-sobre h4 {
+    font-size: 2rem;
+    color: #373233;
+}
+
+.sobre .txt-sobre p {
+    color: #8b8a87;
+}
+
+/* BENEFICIOS */
+
+.beneficios-site {
+    display: flex;
+    background-color: #ffedef;
+    justify-content: space-around;
+}
+
+.beneficios-site .container-beneficio {
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    color:#373233;
+    border-radius: 0.625rem;
+    gap: 0.9375rem;
+    background-color: #ffff;
+    margin: 2.1875rem;
+    padding: 1.25rem;
+    width: 15.625rem;
+    transition: 0.2s;
+    cursor: default;
+}
+
+.beneficios-site .container-beneficio i {
+    font-size: 2.5rem;
+}
+
+.beneficios-site .container-beneficio p span {
+    color: #8b8a87;
+}
+
+.beneficios-site .container-beneficio:hover {
+    transform: scale(1.07);
+}
+
+/* PRODUTOS */
+
+#produtos > .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 62.5rem;
+}
+
+.container-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    box-shadow: 0 0 0.4375rem #37323348;
+    border-radius: 0.5rem;
+    padding: 0.3125rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 18.75rem;
+}
+
+.container-produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0.4375rem #e25a87;
+}
+
+.container-produto .desconto {
+    color: #e25a87;
+    font-weight: 700;
+    background-color: #ffedef;
+    border-radius: 1.25rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    width: 3.75rem;
+}
+
+.container-produto img {
+    max-width: 12.5rem;
+    align-self: center;
+    display: block;
+}
+
+.container-produto .flor {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color:#373233;
+    font-size: 2.1875rem;
+}
+
+.container-produto .valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.625rem;
+    gap: 0.3125rem;
+}
+
+.container-produto .valores .valor-desconto {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #e25a87;
+}
+
+.container-produto .valores .valor {
+    font-size: 0.9375rem;
+    color: #8b8a87;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.125rem;
+}
+
+.container-produto button {
+    font-size: 1rem;
+    align-self: center;
+    width: 90%;
+    margin-bottom: 1.25rem;
+}
+
+.container-produto button i {
+    color: #ffff;
+    padding-right: 0.125rem;
+}
+
+/* AVALIACOES */
+
+#avaliacoes > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-avaliacao {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 0 0.4375rem #37323348;
+    border-radius: 0.5rem;
+    width: 20.625rem;
+    font-family: "Noto Sans", sans-serif;
+    padding: 0.375rem;
+}
+
+.container-avaliacao .estrelas {
+    padding: 0.5rem;
+    letter-spacing: -0.125rem;
+}
+
+.container-avaliacao i {
+    color:#e25a87;
+    font-size: 1.75rem;
+}
+
+.container-avaliacao .txt-avaliacao {
+    padding: 0.5rem;
+    color: #8b8a87;
+}
+
+.container-avaliacao .cliente {
+    display: flex;
+    align-items: center;
+}
+
+.cliente img {
+    width: 4.375rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.cliente .nome-cliente {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #373233;
+}
+
+.cliente .satisfacao-cliente {
+    font-weight: 600;
+    color: #8b8a87;
+}
+
+.containers-avaliacoes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* CONTATO */
+
+#contato > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form-img {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    position: relative;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.form-img img {
+    margin-top: 1.875rem;
+    width: 31.25rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 31.25rem;
+    height: 31.25rem;
+    justify-content: space-between;
+}
+
+.form > input {
+    font-size: 1.5rem;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 0.3125rem;
+    border: 1px solid #8b8a87;
+    padding: 0.5rem;
+}
+
+.form > button {
+    align-self: flex-start;
+
+}
+
+.form > textarea {
+    height: 12.5rem;
+    font-size: 1.5rem;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 0.3125rem;
+    border: 1px solid #8b8a87;
+    padding: 0.5rem;
+    resize: none;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 1.125rem;
+    font-family: "Noto Sans", sans-serif;
+    background-color:#f0dcdf;
+    padding-block: 1.25rem;
+    padding-inline: 9.375rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sessao-footer {
+    line-height: 2.1875rem;
+    padding-inline: 3rem;
+}
+
+footer .sessao-footer h4 {
+    color: #373233;
+}
+
+footer .sessao-footer .links {
+    padding-left: 0;
+    column-count: 2;
+    column-gap: 2.5rem; 
+}
+
+footer .sessao-footer li {
+    list-style: none;
+}
+
+footer .sessao-footer a {
+    text-decoration: none;
+    color: #8b8a87;
+    font-weight: 600;
+}
+
+footer .sessao-footer a:hover {
+    color: #e25a87;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1580px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1410px) and (max-width: 1579px) {
+    html {
+        font-size: 18px;
+    }
+} 
+
+@media (min-width: 1260px) and (max-width: 1409px) {
+    html {
+        font-size: 16px;
+    }
+} 
+
+@media (min-width: 1100px) and (max-width: 1279px) {
+    html {
+        font-size: 14px;
+    }
+} 
+
+@media (min-width: 940px) and (max-width: 1099px) {
+    html {
+        font-size: 12px;
+    }
+} 
+
+@media (min-width: 780px) and (max-width: 939px) {
+    html {
+        font-size: 10px;
+    }
+} 
+
+@media (min-width: 500px) and (max-width: 779px) {
+    html {
+        font-size: 12px;
+    }
+
+    #header .sessoes {
+        visibility: hidden;
+    }
+
+    #topo > .container {
+        flex-direction: column;
+    }
+
+    #topo .txt-topo {
+        margin: 2.5rem;
+        text-align: center;
+    }
+
+    #topo .img-topo img {
+        width: 25rem;
+    }
+
+    #sobre .elementos-sobre{
+        flex-direction: column;
+    }
+
+    #sobre .txt-sobre {
+        text-align: center;
+        align-items: center;
+    }
+
+    .beneficios-site .container-beneficio i {
+        font-size: 2rem;
+    }
+
+    .beneficios-site .container-beneficio p {
+        font-size: 0.8rem;
+    }
+
+    #produtos .container-produto {
+        width: 17rem;
+    }
+
+    #avaliacoes .containers-avaliacoes {
+        flex-direction: column;
+        transform: scale(1.1);
+        margin: 2rem;
+    }
+
+    #contato img {
+        width: 25rem;
+        margin-top: 8rem;
+    }
+
+    footer {
+        padding-inline: 2rem;
+    }
+} 
